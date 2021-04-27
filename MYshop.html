@@ -48,6 +48,21 @@ body {
   font-size: 17px;
   border: none;
 }
+
+.topnav .cart button {
+  float: right;
+  background-color: violet;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.topnav .cart button:hover {
+  background: #ccc;
+}
 .topnav .search-container button {
   float: right;
   padding: 6px 10px;
@@ -273,6 +288,8 @@ img {vertical-align: middle;}
   clear: both;
 }
 
+
+
 </style>
 </head>
 <body>
@@ -287,24 +304,24 @@ img {vertical-align: middle;}
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
-  
+  <div class="cart">
+  <button type="submit" onclick="openTab(event, 'CART')"><i class="fa fa-cart" >&#xf07a;</i></button>
+</div>
   <div class="topnav-right">
     <a href="https://keerthanagolla.github.io/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-	 <button class="tablinks" onclick="openCity(event, 'CART')"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button>
-
   </div>
 </div>
 
 <div class="tab">
   
-  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'Beach Attire')" id="defaultOpen">Beach Attire</button>
-  <button class="tablinks" onclick="openCity(event, 'Trekking ')">Hiking and Trekking </button>
-  <button class="tablinks" onclick="openCity(event, 'Medical Kits')">Medical Kits</button>
-  <button class="tablinks" onclick="openCity(event, 'Toiletries')">Toiletries</button>
-  <button class="tablinks" onclick="openCity(event, 'WildLife Watching')">WildLife Watching</button>
-  <button class="tablinks" onclick="openCity(event, 'Skiing')">Skiing and Snowboarding</button>
-  <button class="tablinks" onclick="openCity(event, 'Mountaneering')">Mountaneering and Climbing</button>
+  <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'Beach Attire')" id="defaultOpen">Beach Attire</button>
+  <button class="tablinks" onclick="openTab(event, 'Trekking ')">Hiking and Trekking </button>
+  <button class="tablinks" onclick="openTab(event, 'Medical Kits')">Medical Kits</button>
+  <button class="tablinks" onclick="openTab(event, 'Toiletries')">Toiletries</button>
+  <button class="tablinks" onclick="openTab(event, 'WildLife Watching')">WildLife Watching</button>
+  <button class="tablinks" onclick="openTab(event, 'Skiing')">Skiing and Snowboarding</button>
+  <button class="tablinks" onclick="openTab(event, 'Mountaneering')">Mountaneering and Climbing</button>
 
 
 
@@ -455,7 +472,7 @@ img {vertical-align: middle;}
   <img src="https://www.decathlon.in/_next/image?url=https%3A%2F%2Fcontents.mediadecathlon.com%2Fp1154695%2F1984e688c195218f1fecefd990629a09%2Fp1154695.jpg%26format%3Dauto&w=640&q=75" alt="Denim Jeans" style="width:100%">
   <h2>Trekking Poles</h2>
   <p></p>
-  <p> <button class="tablinks" onclick="openCity(event, 'Trekking poles')">Click here</button>
+  <p> <button class="tablinks" onclick="openTab(event, 'Trekking poles')">Click here</button>
 </p>
   </div>
    </div>
@@ -483,7 +500,7 @@ img {vertical-align: middle;}
   <div class="card">
   <img src="https://www.decathlon.in/_next/image?url=https%3A%2F%2Fcontents.mediadecathlon.com%2Fp1981373%2Fk%249b63009207eb708712157b83d42dd74b%2Fadults-category-3-hiking-sunglasses-mh140.jpg%3F%26f%3D250x250%26format%3Dauto&w=640&q=75" style="width:100%">
   <h2>Sun Glasses</h2>
-<p><button class="tablinks" onclick="openCity(event, 'Sunglasses')">Click here</button></p>
+<p><button class="tablinks" onclick="openTab(event, 'Sunglasses')">Click here</button></p>
    
   </div>
    </div>
@@ -887,7 +904,7 @@ Collapse" style="width:100%">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmwCPhl02FxFJ9UdkUkzoKHJn023rfdXuNwgp1lOZHmrGGsIhIjC0s7BfRumXOFJvrgFt3S88&usqp=CAc" style="width:100%">
   <h2>Toiletry Bags</h2>
   <p></p>
-  <button class="tablinks" onclick="openCity(event, 'Toiletry bags')">Check Now</button>
+  <button class="tablinks" onclick="openTab(event, 'Toiletry bags')">Check Now</button>
   </div>
    </div>
 <div class="column"> 
@@ -895,7 +912,7 @@ Collapse" style="width:100%">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyvZOv5NJKCT_nOq_vCTO0zHegJQrnCZs6DcWIXnZnyrxFZNt4F1UEn3w6w&usqp=CAc" style="width:100%;height=100px;">
   <h2>Toiletry Items</h2>
   <p></p>
-  <button class="tablinks" onclick="openCity(event, 'Toiletry Items')">Check Now</button>
+  <button class="tablinks" onclick="openTab(event, 'Toiletry Items')">Check Now</button>
   </div>
    </div>
 </div>
@@ -910,7 +927,7 @@ Collapse" style="width:100%">
   <img src="data:image/jpeg;base64,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" style="width:100%">
   <h2>Tooth brush and paste</h2>
   <p></p>
-  <button class="tablinks" onclick="openCity(event, 'Tooth brush and paste')">Check Now</button>
+  <button class="tablinks" onclick="openTab(event, 'Tooth brush and paste')">Check Now</button>
   </div>
    </div>
 <div class="column"> 
@@ -918,7 +935,7 @@ Collapse" style="width:100%">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66XapyqurIBTywD4F9TzFw_eH4gvXNpMlaQ&usqp=CAU" style="width:100%;height=100px;">
   <h2>Soaps</h2>
   <p></p>
-  <button class="tablinks" onclick="openCity(event, 'Soaps')">Check Now</button>
+  <button class="tablinks" onclick="openTab(event, 'Soaps')">Check Now</button>
   </div>
    </div>
 <div class="column"> 
@@ -926,7 +943,7 @@ Collapse" style="width:100%">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRV4BaZX4YFFdPO2TRfQnwwNMG_UKzVOqMow&usqp=CAU" style="width:100%;height=100px;">
   <h2>Sunscreen</h2>
   <p></p>
-  <button class="tablinks" onclick="openCity(event, 'Sunscreen')">Check Now</button>
+  <button class="tablinks" onclick="openTab(event, 'Sunscreen')">Check Now</button>
   </div>
    </div>
 </div>
@@ -1250,7 +1267,7 @@ Sweat resistant gel-based oil-free formula with no white cast, perfect under mak
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
