@@ -163,7 +163,7 @@ xhr.send("name=k&message=yo");*/
 		}
 	};
 	//alert(array2[0])
-	xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+	xmlhttp.setRequestHeader('Content-Type', 'application/xml');
 	xmlhttp.send(xml);
 
 
