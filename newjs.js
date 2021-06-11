@@ -148,12 +148,12 @@ xhr.send("name=k&message=yo");*/
 
 
 	var xmlhttp = new XMLHttpRequest();
-	//var res = XMLHttpRequest.response;
-	//res.setHeader('Access-Control-Allow-Origin', '*');
+	var res = XMLHttpRequest.response;
+	res.setHeader('Access-Control-Allow-Origin', '*');
 	//xmlhttp.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-    //xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService",true);
-	alert("https")
-	xmlhttp.open("POST","https://9.202.179.26:9443/smcfs/restapi/executeFlow/TestDbService");
+    xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService",true);
+	//alert("https")
+	//xmlhttp.open("POST","https://9.202.179.26:9443/smcfs/restapi/executeFlow/TestDbService");
 	//xmlhttp.open("POST","https://hookb.in/BYd120wneGILDDx3Bbyw");
 	var xmlDoc;
 	xmlhttp.onreadystatechange = function() {
