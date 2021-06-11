@@ -148,8 +148,8 @@ xhr.send("name=k&message=yo");*/
 
 
 	var xmlhttp = new XMLHttpRequest();
-	var res = XMLHttpRequest.response;
-	res.setHeader('Access-Control-Allow-Origin', '*');
+	//var res = XMLHttpRequest.response;
+	//res.setHeader('Access-Control-Allow-Origin', '*');
 	//xmlhttp.setRequestHeader( 'Access-Control-Allow-Origin', '*');
     xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService",true);
 	//alert("https")
