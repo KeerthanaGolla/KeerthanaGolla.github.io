@@ -152,7 +152,7 @@ xhr.send("name=k&message=yo");*/
 	//var res = XMLHttpRequest.response;
 	//res.setHeader('Access-Control-Allow-Origin', '*');
 	//xmlhttp.setRequestHeader( 'Access-Control-Allow-Origin', '*');
-	alert("http")
+	//alert("http")
         xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService");
 	//alert((http-SSL_PROTOCOL_ERROR)
 	//alert("https")
