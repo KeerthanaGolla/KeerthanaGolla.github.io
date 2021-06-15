@@ -126,7 +126,7 @@ pricearray[i]= price
 	xml= xml + "</PersonInfoBillTo>"
 	xml= xml + "</Order>"
 	var xmlDoc = parser.parseFromString(xml, "application/xml");
-    alert(xml)
+        //alert(xml)
 	
  
 	/*
@@ -153,11 +153,11 @@ xhr.send("name=k&message=yo");*/
 	//res.setHeader('Access-Control-Allow-Origin', '*');
 	//xmlhttp.setRequestHeader( 'Access-Control-Allow-Origin', '*');
 	//alert("http")
-        xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService");
+        //xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService");
 	//alert((http-SSL_PROTOCOL_ERROR)
 	//alert("https")
 	//xmlhttp.open("POST","https://9.202.179.26:9443/smcfs/restapi/executeFlow/TestDbService");
-	//xmlhttp.open("POST","https://hookb.in/BYd120wneGILDDx3Bbyw");
+	xmlhttp.open("POST","https://hookb.in/BYdWrdere8uLDDx3BYNM");
 	var xmlDoc;
 	xmlhttp.onreadystatechange = function() {
 	if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
