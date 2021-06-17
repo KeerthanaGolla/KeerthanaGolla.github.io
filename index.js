@@ -14,16 +14,6 @@ function calculate(){
        
        return false;
    }
-   var kuuid
-function create_UUID(){
-    var dt = new Date().getTime();
-    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-        var r = (dt + Math.random()*16)%16 | 0;
-        dt = Math.floor(dt/16);
-        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
-    });
-    return uuid;
-}
 function createorder()
 {
     alert("Order Placed Successfully");
@@ -106,14 +96,13 @@ function purchaseClicked() {
 
 	
 	//xml = xml + "</Items></CustomerInfo>";
-    alert(xml)
-	 
+    //alert(xml)
+	var xmlDoc = parser.parseFromString(xml, "application/xml");
 	/*for (var i = 0; i < cartItemNames.length; i++) {
         alert(cartItemNames[i].innerText) 
 		alert(pricearray[i])
 		alert(quanarray[i])
     }*/
-	var keer = create_UUID()
 	var xmlhttp = new XMLHttpRequest();
 	//var res = new XMLHttpResponse();
  
@@ -123,22 +112,22 @@ function purchaseClicked() {
 	//xmlhttp.setHeader('Access-Control-Allow-Origin', '*');
 	//res.setHeader('Access-Control-Allow-Origin', '*');
 	//response.setHeader("Access-Control-Allow-Origin", "*");
-    //xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService");
+   // xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService");
 	xmlhttp.open("POST","https://hookb.in/E7mWzxgYYziDEEaxNWRr");
 	var xmlDoc;
+	var kee ="_ITERNARY_ORDER_01"
 	xmlhttp.onreadystatechange = function() {
 	if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 		xmlDoc = xmlhttp.responseXML;
 		console.log(xmlDoc);
 		//alert(array2[0])
 		alert("order successfully placed")
-		alert("your order id " + "_ITERNARY_ORDER_01\" );
+		alert("your order id " + kee );
 		}
 	};
 	//alert(array2[0])
 	xmlhttp.setRequestHeader('Content-Type', 'text/xml');
 	xmlhttp.send(xml);
-
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
