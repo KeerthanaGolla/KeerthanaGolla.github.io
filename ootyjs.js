@@ -69,7 +69,7 @@ function purchaseClicked() {
 
 	var parser = new DOMParser();
     //var xml = "<?xml version=\"1.0\" standalone=\"yes\" ?>";
-    var xml ="<Order  DocumentType=\"0001\" EnterpriseCode=\"Matrix\" EntryType=\"WEB\" OrderType=\"REGULAR\" OrderNo=\"_ITERNARY_ORDER_01\" SellerOrganizationCode=\"Matrix-R\" PaymentStatus=\"NOT_APPLICABLE\">"
+    var xml ="<Order  DocumentType=\"0001\" EnterpriseCode=\"Matrix\" EntryType=\"WEB\" OrderType=\"REGULAR\" OrderNo=\"_ITERNARY_ORDER_010\" SellerOrganizationCode=\"Matrix-R\" PaymentStatus=\"NOT_APPLICABLE\">"
 	xml=xml+"<OrderLines>"
 
 	var cartRows = cartItems.getElementsByClassName('cart-row')
