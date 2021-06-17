@@ -115,7 +115,7 @@ function purchaseClicked() {
    // xmlhttp.open("POST","http://9.202.179.26:9080/smcfs/restapi/executeFlow/TestDbService");
 	xmlhttp.open("POST","https://hookb.in/E7mWzxgYYziDEEaxNWRr");
 	var xmlDoc;
-	var kee ="_ITERNARY_ORDER_010"
+	var kee ="_ITERNARY_ORDER_0101"
 	xmlhttp.onreadystatechange = function() {
 	if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 		xmlDoc = xmlhttp.responseXML;
