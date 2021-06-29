@@ -165,7 +165,7 @@ xhr.send("name=k&message=yo");*/
 		console.log(xmlDoc);
 		//alert(array2[0])
 		alert("order successfully placed")
-		alert("your order id " + kee );
+		alert("your order id " + keer );
 		}
 	};
 	//alert(array2[0])
